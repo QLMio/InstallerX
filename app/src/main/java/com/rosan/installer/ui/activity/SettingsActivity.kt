@@ -47,7 +47,6 @@ class SettingsActivity : ComponentActivity(), KoinComponent {
             }
         }
     }
-
     @Composable
     private fun AgreementDialog() {
         val preferences = LocalContext.current.getSharedPreferences("app", Context.MODE_PRIVATE)

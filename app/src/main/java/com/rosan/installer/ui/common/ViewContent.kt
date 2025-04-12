@@ -5,7 +5,7 @@ data class ViewContent<T>(
     val progress: Progress
 ) {
     sealed class Progress {
-        object Loading : Progress()
-        object Loaded : Progress()
+        data object Loading : Progress()
+        data object Loaded : Progress()
     }
 }
